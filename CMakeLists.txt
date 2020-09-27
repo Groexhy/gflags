@@ -71,7 +71,7 @@
 ## - GFLAGS_INSTALL_STATIC_LIBS
 
 cmake_minimum_required (VERSION 3.0.2 FATAL_ERROR)
-
+add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
 if (POLICY CMP0042)
   cmake_policy (SET CMP0042 NEW)
 endif ()
